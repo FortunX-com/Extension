@@ -1,0 +1,142 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+}
+
+body {
+}
+
+.myext-modal-main {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.myext-modal-divider {
+    color: #333;
+    background-color: #444;
+    width: 100%;
+    height: 2px;
+    margin: 1.5em 0;
+}
+
+.myext-modal-header {
+    display: flex;
+    padding: 1.5em 1.5em 0 1.5em;
+}
+
+.myext-modal-header > .myext-modal-close-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff2579;
+    font-size: 1.2em;
+    transform: rotate(45deg);
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.myext-modal-header > .myext-modal-close-icon:hover {
+    color: #f85d99;
+    transform: rotate(225deg);
+}
+
+.myext-modal-header > .myext-modal-title-wrapper {
+    flex: 1;
+    margin-right: 1em;
+}
+
+.myext-modal-header > .myext-modal-title-wrapper > .myext-modal-title {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.myext-modal-content-wrapper {
+    padding: 0 1.5em;
+}
+
+.myext-modal-content-wrapper > .myext-modal-content {
+    color: #ccc;
+    line-height: 1.6em;
+}
+
+.myext-modal-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 1.5em 1.5em 1.5em;
+}
+
+.myext-modal-footer > .myext-modal-footer-buttons-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.myext-modal-footer > .myext-modal-footer-checkbox-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.myext-modal-footer > .myext-modal-footer-checkbox-wrapper > .myext-modal-dont-show-again {
+    margin-right: 0.7em;
+}
+
+.myext-modal-footer > .myext-modal-footer-checkbox-wrapper > .myext-modal-dont-show-again-label {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.myext-modal-footer > .myext-modal-footer-buttons-wrapper > .myext-modal-positive-btn {
+    background-color: #2567ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1.5em;
+    margin-left: 1em;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.myext-modal-footer > .myext-modal-footer-buttons-wrapper > .myext-modal-positive-btn:hover {
+    background-color: #0d52f1;
+}
+
+.myext-modal-footer > .myext-modal-footer-buttons-wrapper > .myext-modal-negative-btn {
+    background-color: #ff2579;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1.5em;
+    margin-left: 1em;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.myext-modal-footer > .myext-modal-footer-buttons-wrapper > .myext-modal-negative-btn:hover {
+    background-color: #e50e61;
+}
+
+.myext-modal-footer > .myext-modal-footer-buttons-wrapper > .myext-modal-neutral-btn {
+    background-color: #fff;
+    color: #444;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1.5em;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.myext-modal-footer > .myext-modal-footer-buttons-wrapper > .myext-modal-neutral-btn:hover {
+    background-color: #eee;
+}

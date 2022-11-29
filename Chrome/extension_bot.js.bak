@@ -1,0 +1,64 @@
+let jq;
+
+(function () {
+
+    // run init after jquery loaded
+    let nTimer = setInterval(function () {
+        if (window.jQuery) {
+
+            // run init
+            jq = jQuery.noConflict(true);
+            (function ($) {
+                $(function () {
+                    botInit();
+                });
+            })(jq);
+
+            // clear interval of checking
+            clearInterval(nTimer);
+        }
+    }, 100);
+
+})();
+
+const thanxIframeAppId = 'thanx-iframe-angular-app-id';
+
+function botInit() {
+
+    // Identifying current page product
+    // identifying();
+}
+
+function identifying() {
+
+    // Send request to API for identifying current page product
+    /* httpGet('', null, true, function (productResponse) {
+
+        // Open Angular app in iframe
+        // Send response product "slug" to open corresponding product page in Angular app
+    }); */
+
+    setTimeout(() => {
+
+        // Open Angular app in iframe
+        openModal(thanxIframeAppId,
+            {
+                iframe: {
+                    className: 'myext-iframe'
+                },
+                overlay: {
+                    hasCancelBtn: true,
+                    cancelBtnClassName: 'myext-modal-overlay-custom-cancel-btn'
+                }
+            },
+            'app/index.html#/stores/nike',
+            true,
+            () => {
+
+                // Send message to iframe
+                setTimeout(() => {
+                    sendMessageToIframe('open-product-page', { slug: 'nike' });
+                }, 1000);
+            });
+    });
+}

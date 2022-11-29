@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+    <title>Screenshot</title>
+    <link rel="stylesheet" type="text/css" href="../libs/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="popup.css"/>
+</head>
+
+<body>
+
+<div class="main">
+
+    <div class="main-buttons-wrapper">
+
+        <div id="btnWholePage" class="main-button-card">
+
+            <img class="main-button-icon" src="../assets/icons/paper.png" />
+            <span class="main-button-text">Visible part</span>
+            <span class="main-button-sub-text">ctrl + shift + V</span>
+
+        </div>
+
+        <div id="btnSelectedArea" class="main-button-card">
+
+            <img class="main-button-icon" src="../assets/icons/crop.png" />
+            <span class="main-button-text">Selected area</span>
+            <span class="main-button-sub-text">ctrl + shift + S</span>
+
+        </div>
+
+        <div id="btnLoadLocalImg" class="main-button-card">
+
+            <img class="main-button-icon" src="../assets/icons/folder-open.png" />
+            <span class="main-button-text">File local</span>
+            <span class="main-button-sub-text">ctrl + shift + O</span>
+            <input id="inputLocalImg" type="file" name="file" accept="image/*" style="display:none">
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="content_popup.js"></script>
+
+</body>
+
+</html>

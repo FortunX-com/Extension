@@ -1,0 +1,88 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+}
+
+body {
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.divider {
+    color: #333;
+    background-color: #444;
+    width: 100%;
+    height: 2px;
+    margin: 1.5em 0;
+}
+
+.header {
+    display: flex;
+    padding: 1.5em 1.5em 0 1.5em;
+}
+
+.header > .close-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff2579;
+    font-size: 1.2em;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.header > .title-wrapper {
+    flex: 1;
+}
+
+.header > .title-wrapper > .title {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.content {
+    padding: 0 1.5em;
+}
+
+.content > .description {
+    color: #ccc;
+    line-height: 1.6em;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 1.5em 1.5em 1.5em;
+}
+
+.footer > .positive-btn {
+    background-color: #2567ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1.5em;
+    margin-left: 1em;
+    cursor: pointer;
+}
+
+.footer > .negative-btn {
+    background-color: #ff2579;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+}

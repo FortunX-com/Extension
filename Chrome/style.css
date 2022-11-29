@@ -1,0 +1,97 @@
+.myext-modal-overlay {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51, 51, 51, 0.7);
+    z-index: 1000;
+}
+
+.myext-modal-overlay-cancel-btn {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50px;
+    top: 50px;
+    font-size: 2.5em;
+    color: white;
+    background-color: #c57070;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.25s ease-in-out;
+}
+
+.myext-modal-overlay-cancel-btn:hover {
+    background-color: #b06565;
+    box-shadow: 0 2px 10px #666;
+}
+
+.myext-modal-container {
+    display: block;
+    position: fixed;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 2px 50px #444;
+    background: #1d222f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2001;
+}
+
+.myext-iframe {
+    position: fixed;
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: 0 2px 50px #444;
+    top: 50px;
+    right: 50px;
+    height: 630px;
+    width: 370px;
+}
+
+.myext-modal-overlay-custom-cancel-btn {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 40px;
+    right: 40px;
+    font-size: 2em;
+    color: #fff;
+    background-color: #c57070;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.25s ease-in-out;
+}
+
+.myext-modal-overlay-custom-cancel-btn:hover {
+    background-color: #b06565;
+    box-shadow: 0 2px 10px #666;
+}
+
+
+/* Responsive */
+
+/*@media all and (max-height: 900px) {
+
+    .myext-iframe {
+        border-radius: 0;
+        top: 0;
+        right: 0;
+        transform: none;
+        height: 100%;
+        width: 420px;
+    }
+}*/

@@ -1,0 +1,64 @@
+﻿{
+	"manifest_version": 2,
+	"name": "Thanx Finance",
+	"version": "1.0.1",
+	"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAy1rX3D3VvuU8uSzENgljrayYVj3WSm5ng5xuSK3NIeNT8BxvuhVgeqQ1QJ/shMDNXDU9y103+qBSlAvTx1u40SymXkSvvZXaCvN/ysbLiAAXo2NEIU4tZAIGrs9fQXCXOCtzgLMgkXue9KU2GHjAMZ3i7aRbjumJMyEBG5U2TJqLiOFRfi9Jx1nMdOaaQ4VvorR/mfLU5oqWsJl7rJz8ZopNtVMDnijzjqVw9xKm3UhOCsPylOneKyjrKAO13n6xA43lvR0S6QuDN7v0Is2tIqIEfW1BKgfpqFUuMpsHFEEAf2aCtDHCofUQrm1/kj4vvbm9ntiO0i+n4Uq/qdI9LQIDAQAB",
+	"icons": {
+		"16": "assets/icons/icon16.png",
+		"48": "assets/icons/icon48.png",
+		"128": "assets/icons/icon128.png"
+	},
+	"permissions": [
+		"tabs", "<all_urls>"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"<all_urls>"
+			],
+			"js": [
+				"libs/jquery-3.6.0.min.js",
+				"utils/utility.js",
+				"content_extension.js",
+				"extension_bot.js"
+			],
+			"css": [
+				"style.css",
+				"modal/modal/modal.css",
+				"modal/gmail/gmail.css",
+				"modal/chrome-update/chrome-update.css"
+			],
+			"run_at": "document_end",
+			"all_frames": true
+		}
+	],
+	"browser_action": {
+		"default_icon": "assets/icons/icon16.png",
+		"default_title": "Thanx Finance"
+	},
+	"background": {
+		"scripts": [
+			"background.js"
+		],
+		"persistent": true
+	},
+	"web_accessible_resources": [
+		"app/index.html",
+		"libs/jquery-3.6.0.min.js",
+		"utils/json_csv.js",
+		"style.css",
+		"utils/utility.js",
+		"extension_bot.js",
+		"modal/modal/modal.html",
+		"modal/chrome-update/chrome-update.html",
+		"<all_urls>"
+	],
+	"browser_specific_settings": {
+		"gecko": {
+			"update_url": "https://example.com/updates.json"
+		}
+	}
+}
+
+
+

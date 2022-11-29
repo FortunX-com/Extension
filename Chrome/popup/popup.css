@@ -1,0 +1,82 @@
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html, body {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: #313338;
+    font-size: 14px;
+}
+
+form {
+    margin: auto;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-button-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #5f636c;
+    border-radius: 5px;
+    border: solid #76777a 1px;
+    width: 100px;
+    height: 89px;
+    cursor: pointer;
+    transition: 0.25s ease-in-out all;
+}
+
+.main-button-card:not(:last-child) {
+    margin-right: 1em;
+}
+
+.main-button-card:hover {
+    background-color: #424552;
+}
+
+.main-button-icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 0.7em;
+    object-fit: contain;
+}
+
+.main-button-text {
+    color: #eee;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+}
+
+.main-button-sub-text {
+    color: #aaa;
+    font-size: 10px;
+}
+
